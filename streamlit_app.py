@@ -319,7 +319,7 @@ def laminate_analysis_module():
     with col1:
         st.markdown("*Add New Ply*")
         angle = st.number_input("Ply Angle (degrees)", -180, 180, 0, key="ply_angle")
-        thickness = st.number_input("Ply Thickness (mm)", 0.01, 10.0, 0.125, 0.01, key="ply_thickness")
+        thickness = st.number_input("Ply Thickness (mm)", 0.001, 10.0, 0.125, 0.001, key="ply_thickness")
         
         if st.button("Add Ply to Laminate"):
             if 'laminate_layers' not in st.session_state:
